@@ -14,7 +14,7 @@
         Titre : <input type="text" name="titre_lien" required><br><br>
         Url : <input type="text" name="url_lien" required><br><br>
         Description : <input type="text" name="description_lien" required><br><br>
-        Hashtag_lien : <input type="text" name="hashtag_lien" required><br><br>
+        Hashtag_lien : <input type="text" name="hashtag_lien" value="#" required><br><br>
         date_lien : <input type="date" name="date_lien" placeholder="Au format année/mois/jour" required><br><br>
         <input type="submit" value="Ajouter le lien" name="submit">
 
