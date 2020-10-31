@@ -13,7 +13,7 @@
     $donnees = $reponse->fetch();
     while ($donnees = $reponse->fetch()) {
     ?>
-    <p>Nom du lien : <?php echo $donnees['titre_lien']; ?> #<?php echo $donnees['hashtag_lien']; ?><br/>
+    <p>Nom du lien : <?php echo $donnees['titre_lien']; ?> <?php echo htmlentities($donnees['hashtag_lien']); ?><br/>
     URL du lien : <a href="<?php echo $donnees['url_lien']; ?>"><?php echo $donnees['url_lien']; ?></a><br/>
     Description du lien : <?php echo $donnees['description_lien']; ?><br/>
     Date d'ajout du lien : <?php echo $donnees['date_lien']; ?><br/>
